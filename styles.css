@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    background-color: #e2e5e8;
+    background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
+}
+.navContainer{
+    width: 100vw;
+    /* background-color: rgba(114, 114, 206, 0.592); */
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    padding: 2rem;
+}
+#navList{
+    width: 100%;
+    padding: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navLogo{
+    font-size: 60px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: azure;
+
+}
+
+#navItems{
+    display: flex;
+    gap: 40px;
+    font-size: 30px;
+}
+
+.footerBox{
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    width: 100vw;
+    text-align: center;
+    min-height: 40px;
+}
+
+
+.footerBox p{
+    color: azure;
+    font-size: 2.5rem;
+}
+
+.contentBox{
+    width: 80vw;
+    margin: auto;
+    border: 1px solid black;
+    /* background-color: white; */
+    background-image: linear-gradient( 270.3deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 100% );
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+
+
+.item{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+    padding: 35px 74px;
+    background-image: linear-gradient(120deg, #b55d23 0%, #96e6a1 100%);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.rightBox{
+     position: relative;
+     overflow: hidden;
+     transition: all 0.3s linear 0s;
+}
+.rightBox img{
+    height: 229px;
+    border-radius: 19%;
+    transition: all 0.6s linear 0s;
+}
+
+.rightBox:hover{
+    transform: scale(1.2);
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2{
+    font-size: 2rem;
+}
+
+.ingBox{
+    font: 1.1rem;
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 229px;
+    width: 100%;
+    background-color: rgba(172, 160, 177, 0.549);
+    border-radius: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
